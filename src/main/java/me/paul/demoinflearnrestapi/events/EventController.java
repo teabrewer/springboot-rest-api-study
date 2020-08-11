@@ -37,7 +37,7 @@ public class EventController {
         }
         eventValidator.validate(eventDto, errors);
         if (errors.hasErrors()) {
-            return ResponseEntity.badRequest().build();
+            return ResponseEntity.badRequest().body(errors);
         }
         Event event = modelMepper.map(eventDto, Event.class);
         Event newEvent = this.eventRepository.save(event);
