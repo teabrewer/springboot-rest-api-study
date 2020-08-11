@@ -18,4 +18,6 @@ inflearn
 - 201 응답 받기
 - 이벤트 Repository
 - 입력값 제한하기
-- 입력값 이외에 에러 발생 (not yet)
+- 입력값 이외에 에러 발생
+- Bad Request 처리
+- Bad Request 응답
