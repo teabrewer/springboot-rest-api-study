@@ -1,5 +1,6 @@
-package me.paul.demoinflearnrestapi.events;
+package me.paul.demoinflearnrestapi.common;
 
+import me.paul.demoinflearnrestapi.events.EventDto;
 import org.springframework.stereotype.Component;
 import org.springframework.validation.Errors;
 

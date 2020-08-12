@@ -1,4 +1,4 @@
-package me.paul.demoinflearnrestapi.events;
+package me.paul.demoinflearnrestapi.common;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
