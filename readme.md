@@ -21,3 +21,9 @@ inflearn
 - 입력값 이외에 에러 발생
 - Bad Request 처리
 - Bad Request 응답
+- 비즈니스 로직 적용
+- 매개변수를 이용한 테스트
+
+3. HATEOAS와 Self-Describtive Message 적용
+- 스프링 HATEOAS 소개 (not yet)
+- 스프링 HATEOAS 적용 (not yet)
