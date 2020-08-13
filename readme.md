@@ -27,4 +27,8 @@ inflearn
 3.HATEOAS와 Self-Describtive Message 적용
 - 스프링 HATEOAS 소개
 - 스프링 HATEOAS 적용
-- 스프링 REST Docs 소개 (not yet)
+- 스프링 REST Docs 소개
+- 스프링 REST Docs 적용
+- 스프링 REST Docs 각종 문서 조각(Snippet) 생성하기
+- 스프링 REST Docs 문서 빌드
+- 테스트용 DB와 설정 분리하기 (not yet)
