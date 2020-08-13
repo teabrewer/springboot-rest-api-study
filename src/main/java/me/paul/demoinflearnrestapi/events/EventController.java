@@ -2,6 +2,7 @@ package me.paul.demoinflearnrestapi.events;
 
 import me.paul.demoinflearnrestapi.common.EventValidator;
 import org.modelmapper.ModelMapper;
+import org.springframework.hateoas.Link;
 import org.springframework.hateoas.MediaTypes;
 import org.springframework.hateoas.server.mvc.WebMvcLinkBuilder;
 import org.springframework.http.ResponseEntity;
@@ -44,12 +45,15 @@ public class EventController {
         Event event = modelMepper.map(eventDto, Event.class);
         event.update();
         Event newEvent = this.eventRepository.save(event);
+
         WebMvcLinkBuilder selfLinkBuilder = linkTo(EventController.class).slash(newEvent.getId());
         URI createUri = selfLinkBuilder.toUri();
+
         EventResource eventResource = new EventResource(event);
         eventResource.add(linkTo(EventController.class).withRel("query-events"));
         eventResource.add(selfLinkBuilder.withSelfRel());
         eventResource.add(selfLinkBuilder.withRel("update-event"));
+        eventResource.add(Link.of("/docs/index.html", "profile"));
         return ResponseEntity.created(createUri).body(eventResource);
     }
 }
